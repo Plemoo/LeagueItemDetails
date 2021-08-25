@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <!-- <b-container>
     <div class="jumbotron bg-cover text-white lolbackground">
       <div class="py-5 text-center">
           <h1 class="display-4 font-weight-bold">League Items with Details</h1>
@@ -9,16 +9,16 @@
     </div>
     <sidebar></sidebar>
     <router-view></router-view>
-  </b-container>
+  </b-container> -->
+      <router-view></router-view>
+
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue'
 
 //import axios from "axios"
 export default {
-  components: { Sidebar },
-  name: 'Main',
+  name: 'App',
   data(){
     return {
       test:""

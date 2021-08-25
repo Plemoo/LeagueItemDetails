@@ -3,11 +3,15 @@ import Vue from 'vue'
 import VueAxios from 'vue-axios'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-import ItemsByCategory from "./components/ItemsByCategory.vue"
+import LeagueItemDetails from "./components/LeagueItemDetails.vue"
+
+//import ItemsByCategory from "./components/ItemsByCategory.vue"
+import Game from "./components/Game.vue";
 //import HowItWorks from "./components/HowItWorks.vue"
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueGtag from "vue-gtag";
 
+//import "./service/meinHuhn.js"
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -36,8 +40,9 @@ export const EventBus = new Vue();
 // ]
 const routes = [
     //    { path: '/ItemsByCategory', component: ItemsByCategory },
-    { path: '', component: ItemsByCategory },
-    { path: '/', component: ItemsByCategory },
+    { path: '', component: LeagueItemDetails },
+    { path: '/', component: LeagueItemDetails },
+    { path: '/meinHuhn', component: Game },
     { path: '*', redirect: '/' }
 ]
 
